@@ -186,7 +186,7 @@
         magicWord.trim() === 'please'
       ) {
         $('#main-input')
-          .append($('<img id="asciiNewman" src="/img/asciiNewman.jpg" />'));
+          .append($('<img id="asciiNewman" src="../img/asciiNewman.jpg" />'));
         $('#asciiNewman').load(function() {
           const wrap = $('.inner-wrap', env.active);
           wrap.scrollTop(wrap[0].scrollHeight);
@@ -210,7 +210,8 @@
         }, 200);
 
         setTimeout(function() {
-          env.sounds.lockDown.play();
+          // env.sounds.lockDown.play();
+          document.getElementById('dennis-nedry').play();
         }, 1000);
 
         setTimeout(function() {
@@ -443,11 +444,10 @@
       'asciiNewman.jpg',
       'zebraGirlWindow.jpg',
     ]).each(function() {
-      new Image().src = '/img/' + this;
+      new Image().src = './img/' + this;
     });
 
-    $.ajax({url: './swf/theKing.swf'});
-
+    $.ajax({url: './video/theKing.mp4'});
     // remove boot screen
     setTimeout(function() {
       $('#irix-boot').remove();
