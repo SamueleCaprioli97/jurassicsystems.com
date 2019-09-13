@@ -1,6 +1,6 @@
 (function($) {
    $.ajax({
-      url : '/swf/theKing.swf'
+      url : './swf/theKing.swf'
    });
 
    $(['theKingBlur.jpg',

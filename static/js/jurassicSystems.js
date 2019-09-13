@@ -57,17 +57,17 @@
         const lockDownHTML5 = $('<audio preload="auto"/>');
         const dennisMusicHTML5 = $('<audio preload="auto"/>');
 
-        beepHTML5.append('<source src="/snd/beep.ogg">');
-        beepHTML5.append('<source src="/snd/beep.mp3">');
-        beepHTML5.append('<source src="/snd/beep.wav">');
+        beepHTML5.append('<source src="./snd/beep.ogg">');
+        beepHTML5.append('<source src="./snd/beep.mp3">');
+        beepHTML5.append('<source src="./snd/beep.wav">');
 
-        lockDownHTML5.append('<source src="/snd/lockDown.ogg">');
-        lockDownHTML5.append('<source src="/snd/lockDown.mp3">');
-        lockDownHTML5.append('<source src="/snd/lockDown.wav">');
+        lockDownHTML5.append('<source src="./snd/lockDown.ogg">');
+        lockDownHTML5.append('<source src="./snd/lockDown.mp3">');
+        lockDownHTML5.append('<source src="./snd/lockDown.wav">');
 
-        dennisMusicHTML5.append('<source src="/snd/dennisMusic.ogg">');
-        dennisMusicHTML5.append('<source src="/snd/dennisMusic.mp3">');
-        dennisMusicHTML5.append('<source src="/snd/dennisMusic.wav">');
+        dennisMusicHTML5.append('<source src="./snd/dennisMusic.ogg">');
+        dennisMusicHTML5.append('<source src="./snd/dennisMusic.mp3">');
+        dennisMusicHTML5.append('<source src="./snd/dennisMusic.wav">');
 
         env.sounds.beep = {
           play: function() {
@@ -446,7 +446,7 @@
       new Image().src = '/img/' + this;
     });
 
-    $.ajax({url: '/swf/theKing.swf'});
+    $.ajax({url: './swf/theKing.swf'});
 
     // remove boot screen
     setTimeout(function() {
