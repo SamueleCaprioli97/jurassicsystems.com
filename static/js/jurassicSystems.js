@@ -210,8 +210,7 @@
         }, 200);
 
         setTimeout(function() {
-          // env.sounds.lockDown.play();
-          document.getElementById('dennis-nedry').play();
+          env.sounds.lockDown.play();
         }, 1000);
 
         setTimeout(function() {
@@ -228,6 +227,7 @@
 
                 $('#mac-hd-window').css('background-image', 'url(/img/macHDBlur.jpg)');
                 $('#the-king-window').show();
+                document.getElementById('dennis-nedry').play();
                 setTimeout(function() {
                   $('#home-key').css('z-index', '64000');
                 }, 10000);
@@ -447,7 +447,7 @@
       new Image().src = './img/' + this;
     });
 
-    $.ajax({url: './video/theKing.mp4'});
+    // $.ajax({url: './video/theKing.mp4'});
     // remove boot screen
     setTimeout(function() {
       $('#irix-boot').remove();
