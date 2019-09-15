@@ -225,7 +225,7 @@
                   clearInterval(errorSpam);
                 }
 
-                $('#mac-hd-window').css('background-image', 'url(/img/macHDBlur.jpg)');
+                $('#mac-hd-window').css('background-image', 'url(./img/macHDBlur.jpg)');
                 $('#the-king-window').show();
                 document.getElementById('dennis-nedry').play();
                 setTimeout(function() {
