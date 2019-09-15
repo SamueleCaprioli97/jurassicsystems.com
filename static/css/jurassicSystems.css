@@ -273,6 +273,8 @@ body {
 
 #king-swf {
    z-index: 64000;
+   left: 70px;
+   position: absolute;
 }
 
 #mac-hd-window {
