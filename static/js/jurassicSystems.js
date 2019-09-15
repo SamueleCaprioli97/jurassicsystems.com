@@ -186,7 +186,7 @@
         magicWord.trim() === 'please'
       ) {
         $('#main-input')
-          .append($('<img id="asciiNewman" src="../img/asciiNewman.jpg" />'));
+          .append($('<img id="asciiNewman" src="./img/asciiNewman.jpg" />'));
         $('#asciiNewman').load(function() {
           const wrap = $('.inner-wrap', env.active);
           wrap.scrollTop(wrap[0].scrollHeight);
